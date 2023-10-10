@@ -13,6 +13,10 @@ session.add(film_1)
 session.add(film_2)
 session.add(film_3)
 
+update = update(Film)
+update = update.values({"title": "Atonement"})
+update = update.where(Film.id == 0)
+session.execute(update)
 session.commit()
 session.close()
 
