@@ -75,5 +75,5 @@ assert order_2.final_price() == 10
 order_3 = Order(100, student_discount)
 assert order_3.final_price() == 25
 order_4 = Order(100)
-
+assert order_4.final_price() == 100
 print(order_1.final_price(), order_2.final_price(), order_3.final_price(), order_4.final_price())
